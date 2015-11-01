@@ -6,4 +6,4 @@ fi
 cd `dirname ${SCRIPT_DIR}` > /dev/null
 SCRIPT_DIR=`pwd`;
 popd  > /dev/null
-perl $SCRIPT_DIR/../plbin/ms-model_recon.pl "$@"
+perl $SCRIPT_DIR/../plbin/ms-listrastjobs.pl "$@"

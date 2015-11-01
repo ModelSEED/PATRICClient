@@ -205,9 +205,19 @@ class ProbModelSEED(object):
                           [input])
         return resp[0]
 
-    def list_models(self):
+    def list_models(self, input):
         resp = self._call('ProbModelSEED.list_models',
-                          [])
+                          [input])
+        return resp[0]
+
+    def copy_model(self, input):
+        resp = self._call('ProbModelSEED.copy_model',
+                          [input])
+        return resp[0]
+
+    def copy_genome(self, input):
+        resp = self._call('ProbModelSEED.copy_genome',
+                          [input])
         return resp[0]
 
     def list_model_edits(self, input):
@@ -222,6 +232,20 @@ class ProbModelSEED(object):
 
     def get_feature(self, input):
         resp = self._call('ProbModelSEED.get_feature',
+                          [input])
+        return resp[0]
+
+    def save_feature_function(self, input):
+        self._call('ProbModelSEED.save_feature_function',
+                   [input])
+
+    def compare_regions(self, input):
+        resp = self._call('ProbModelSEED.compare_regions',
+                          [input])
+        return resp[0]
+
+    def plant_annotation_overview(self, input):
+        resp = self._call('ProbModelSEED.plant_annotation_overview',
                           [input])
         return resp[0]
 
